@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:"Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.sidebar {
+  @apply w-full md:w-64 bg-gray-800 p-4 md:py-6 md:pt-24;
+}
+
+.sidebar-btn {
+  @apply block w-full text-lg p-3 bg-transparent text-left cursor-pointer transition duration-300 ease-in-out;
+}
+
+.sidebar-btn.active {
+  @apply bg-blue-700 my-4 text-white font-semibold;
+}
+
+.sidebar-btn.active:hover {
+  @apply bg-blue-600;
+}
+
+.content {
+  @apply flex-1 p-4;
+}
